@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Hungarian\n"
+"Language: hu_HU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: cs-cart-latest\n"
+"X-Crowdin-Project-ID: 50163\n"
+"X-Crowdin-Language: hu\n"
+"X-Crowdin-File: /release-4.19.1/upgrade.po\n"
+"X-Crowdin-File-ID: 10025\n"
+"PO-Revision-Date: 2025-12-29 10:40\n"
+
+msgctxt "Languages::upgrade_notification.rus_taxes.new_tax_22_support.title"
+msgid "VAT 22% support added"
+msgstr ""
+
+msgctxt "Languages::upgrade_notification.rus_taxes.new_tax_22_support.message"
+msgid "<p>Starting with version 4.19.1.SP2, CS-Cart supports the new VAT rate of 22%. This new rate can be passed correctly to all the services where CS-Cart could previously send VAT rates: ATOL Online, PayAnyWay, T-Bank, YooKassa, SDEK.</p><p>We didn't change any of your existing taxes, but we did create the new tax for your convenience (without adding it to products). This new tax is disabled by default. If you need it, just enable it in \"Settings > Taxes\". Make sure to check the \"Tax rates\" tab of the new tax and ensure that the rates are correct for all the rate areas where they are needed.</p><a class=\"btn btn-primary\" target=\"_blank\" href=\"[url]\">To taxes</a>"
+msgstr ""
+

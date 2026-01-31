@@ -1,0 +1,27 @@
+.logo-menu__btn-inner {
+    justify-content: flex-start;
+    width: ~"calc(var(--main-menu-width) - 16px * 2)"; // max-width: 208px;
+}
+
+.logo-menu__logo {
+    max-height: 100%;
+    object-fit: contain;
+    object-position: left;
+}
+
+@media (prefers-color-scheme: light) {
+    .logo-menu__logo--light {
+        display: block;
+    }
+    .logo-menu__logo--dark {
+        display: none;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .logo-menu__logo--light {
+        display: none;
+    }
+    .logo-menu__logo--dark {
+        display: block;
+    }
+}

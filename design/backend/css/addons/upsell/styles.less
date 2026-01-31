@@ -1,0 +1,13 @@
+.upsell-popup__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// var(--cs-desktop-breakpoint)
+@media (max-width: 1023px) {
+    .upsell-popup__wrapper {
+        // For: @media (max-width: 1023px) { .object-container:after { padding-bottom: 130px; } }
+        min-height: ~"calc(100% - 130px)";
+    }
+}

@@ -1,0 +1,73 @@
+.statistic-list-item__price {
+    white-space: nowrap;
+}
+
+// Statuses
+// Vendors suspended (s)
+.view-status--type-companies.view-status-s:before,
+.status-dropdown--type-companies.status-dropdown-s:before,
+.status-link--type-companies.status-link-s:before {
+    color: var(--cs-btn-danger-background);
+}
+
+// Accounting
+// Completed (c)
+.view-status--type-companies-payouts.view-status-c:before,
+.status-dropdown--type-companies-payouts.status-dropdown-c:before,
+.status-link--type-companies-payouts.status-link-c:before {
+    color: var(--cs-btn-success-background);
+}
+
+// Declined (d)
+.view-status--type-companies-payouts.view-status-d:before,
+.status-dropdown--type-companies-payouts.status-dropdown-d:before,
+.status-link--type-companies-payouts.status-link-d:before {
+    color: var(--cs-btn-danger-background);
+}
+
+// Pending (p)
+.view-status--type-companies-payouts.view-status-p:before,
+.status-dropdown--type-companies-payouts.status-dropdown-p:before,
+.status-link--type-companies-payouts.status-link-p:before {
+    color: var(--cs-btn-warning-background);
+}
+
+.company-list__labels-th > div:not(:first-child):before,
+.company-list__labels-th > span:not(:first-child):before,
+.company-list__labels-th > a:not(:first-child):before,
+.company-list__labels-th > small:not(:first-child):before {
+    content: '/';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.company-list__labels > div:not(:first-child):before,
+.company-list__labels > span:not(:first-child):before,
+.company-list__labels > a:not(:first-child):before,
+.company-list__labels > small:not(:first-child):before {
+    content: '•';
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    line-height: 14px;
+}
+
+.company-list__labels-secondary-th > div:not(:first-child):before,
+.company-list__labels-secondary-th > span:not(:first-child):before,
+.company-list__labels-secondary-th > a:not(:first-child):before,
+.company-list__labels-secondary-th > small:not(:first-child):before {
+    content: '/';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.company-list__labels-secondary > div:not(:first-child):before,
+.company-list__labels-secondary > span:not(:first-child):before,
+.company-list__labels-secondary > a:not(:first-child):before,
+.company-list__labels-secondary > small:not(:first-child):before {
+    content: '•';
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    line-height: 14px;
+}

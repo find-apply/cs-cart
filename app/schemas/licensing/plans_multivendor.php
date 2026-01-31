@@ -1,0 +1,108 @@
+<?php
+/***************************************************************************
+*                                                                          *
+*   (c) 2004 Vladimir V. Kalynyak, Alexey V. Vinokurov, Ilya M. Shalnev    *
+*                                                                          *
+* This  is  commercial  software,  only  users  who have purchased a valid *
+* license  and  accept  to the terms of the  License Agreement can install *
+* and use this program.                                                    *
+*                                                                          *
+****************************************************************************
+* PLEASE READ THE FULL TEXT  OF THE SOFTWARE  LICENSE   AGREEMENT  IN  THE *
+* "copyright.txt" FILE PROVIDED WITH THIS DISTRIBUTION PACKAGE.            *
+****************************************************************************/
+
+use Tygh\Enum\YesNo as YesNoEnum;
+use Tygh\Licensing\Features;
+use Tygh\Licensing\Plan;
+use Tygh\Licensing\Rules\CustomRule;
+use Tygh\Licensing\Rules\YesNoRule;
+
+defined('BOOTSTRAP') or die('Access denied');
+
+return [
+    new Plan('default', [
+        Features::WAREHOUSES            => new YesNoRule(YesNoEnum::NO),
+        Features::MASTER_PRODUCTS       => new YesNoRule(YesNoEnum::NO),
+        Features::VENDOR_RATING         => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_CATEGORIES_FEE => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_PRIVILEGES     => new YesNoRule(YesNoEnum::YES),
+        Features::DIRECT_PAYMENTS       => new YesNoRule(YesNoEnum::NO),
+        Features::ORDER_FULFILLMENT     => new YesNoRule(YesNoEnum::NO),
+        Features::PAYMENTS_BY_COUNTRY   => new YesNoRule(YesNoEnum::NO),
+        Features::FULL_PAGE_CACHE       => new CustomRule($addon_full_page_cache_handler),
+        Features::MULTIPLE_STOREFRONTS  => new YesNoRule(YesNoEnum::NO),
+        Features::ADD_STOREFRONT        => new CustomRule($add_storefront_handler, false),
+        Features::PRODUCT_VIDEOS        => new YesNoRule(YesNoEnum::NO),
+    ]),
+    new Plan('trial', [
+        Features::WAREHOUSES            => new YesNoRule(YesNoEnum::YES),
+        Features::MASTER_PRODUCTS       => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_RATING         => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_CATEGORIES_FEE => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_PRIVILEGES     => new YesNoRule(YesNoEnum::YES),
+        Features::DIRECT_PAYMENTS       => new YesNoRule(YesNoEnum::YES),
+        Features::ORDER_FULFILLMENT     => new YesNoRule(YesNoEnum::YES),
+        Features::PAYMENTS_BY_COUNTRY   => new YesNoRule(YesNoEnum::YES),
+        Features::FULL_PAGE_CACHE       => new YesNoRule(YesNoEnum::YES),
+        Features::MULTIPLE_STOREFRONTS  => new YesNoRule(YesNoEnum::YES),
+        Features::ADD_STOREFRONT        => new CustomRule($add_storefront_handler, true),
+        Features::PRODUCT_VIDEOS        => new YesNoRule(YesNoEnum::YES),
+    ]),
+    new Plan('standard', [
+        Features::WAREHOUSES            => new YesNoRule(YesNoEnum::NO),
+        Features::MASTER_PRODUCTS       => new YesNoRule(YesNoEnum::NO),
+        Features::VENDOR_RATING         => new YesNoRule(YesNoEnum::NO),
+        Features::VENDOR_CATEGORIES_FEE => new YesNoRule(YesNoEnum::NO),
+        Features::VENDOR_PRIVILEGES     => new YesNoRule(YesNoEnum::NO),
+        Features::DIRECT_PAYMENTS       => new YesNoRule(YesNoEnum::NO),
+        Features::ORDER_FULFILLMENT     => new YesNoRule(YesNoEnum::NO),
+        Features::PAYMENTS_BY_COUNTRY   => new YesNoRule(YesNoEnum::NO),
+        Features::FULL_PAGE_CACHE       => new CustomRule($addon_full_page_cache_handler),
+        Features::MULTIPLE_STOREFRONTS  => new YesNoRule(YesNoEnum::NO),
+        Features::ADD_STOREFRONT        => new CustomRule($add_storefront_handler, false),
+        Features::PRODUCT_VIDEOS        => new YesNoRule(YesNoEnum::NO),
+    ]),
+    new Plan('plus', [
+        Features::WAREHOUSES            => new YesNoRule(YesNoEnum::NO),
+        Features::MASTER_PRODUCTS       => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_RATING         => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_CATEGORIES_FEE => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_PRIVILEGES     => new YesNoRule(YesNoEnum::YES),
+        Features::DIRECT_PAYMENTS       => new YesNoRule(YesNoEnum::YES),
+        Features::ORDER_FULFILLMENT     => new YesNoRule(YesNoEnum::NO),
+        Features::PAYMENTS_BY_COUNTRY   => new YesNoRule(YesNoEnum::NO),
+        Features::FULL_PAGE_CACHE       => new CustomRule($addon_full_page_cache_handler),
+        Features::MULTIPLE_STOREFRONTS  => new YesNoRule(YesNoEnum::NO),
+        Features::ADD_STOREFRONT        => new CustomRule($add_storefront_handler, false),
+        Features::PRODUCT_VIDEOS        => new YesNoRule(YesNoEnum::YES),
+    ]),
+    new Plan('ultimate', [
+        Features::WAREHOUSES            => new YesNoRule(YesNoEnum::YES),
+        Features::MASTER_PRODUCTS       => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_RATING         => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_CATEGORIES_FEE => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_PRIVILEGES     => new YesNoRule(YesNoEnum::YES),
+        Features::DIRECT_PAYMENTS       => new YesNoRule(YesNoEnum::YES),
+        Features::ORDER_FULFILLMENT     => new YesNoRule(YesNoEnum::YES),
+        Features::PAYMENTS_BY_COUNTRY   => new YesNoRule(YesNoEnum::YES),
+        Features::FULL_PAGE_CACHE       => new YesNoRule(YesNoEnum::YES),
+        Features::MULTIPLE_STOREFRONTS  => new YesNoRule(YesNoEnum::YES),
+        Features::ADD_STOREFRONT        => new CustomRule($add_storefront_handler, true),
+        Features::PRODUCT_VIDEOS        => new YesNoRule(YesNoEnum::YES),
+    ]),
+    new Plan('unlim', [
+        Features::WAREHOUSES            => new YesNoRule(YesNoEnum::YES),
+        Features::MASTER_PRODUCTS       => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_RATING         => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_CATEGORIES_FEE => new YesNoRule(YesNoEnum::YES),
+        Features::VENDOR_PRIVILEGES     => new YesNoRule(YesNoEnum::YES),
+        Features::DIRECT_PAYMENTS       => new YesNoRule(YesNoEnum::YES),
+        Features::ORDER_FULFILLMENT     => new YesNoRule(YesNoEnum::YES),
+        Features::PAYMENTS_BY_COUNTRY   => new YesNoRule(YesNoEnum::YES),
+        Features::FULL_PAGE_CACHE       => new YesNoRule(YesNoEnum::YES),
+        Features::MULTIPLE_STOREFRONTS  => new YesNoRule(YesNoEnum::YES),
+        Features::ADD_STOREFRONT        => new CustomRule($add_storefront_handler, true),
+        Features::PRODUCT_VIDEOS        => new YesNoRule(YesNoEnum::YES),
+    ]),
+];

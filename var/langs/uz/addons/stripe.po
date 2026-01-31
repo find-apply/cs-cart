@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Uzbek\n"
+"Language: uz_UZ\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: cs-cart-latest\n"
+"X-Crowdin-Project-ID: 50163\n"
+"X-Crowdin-Language: uz\n"
+"X-Crowdin-File: /release-4.19.1/addons/stripe.po\n"
+"X-Crowdin-File-ID: 9977\n"
+"PO-Revision-Date: 2025-12-26 12:57\n"
+
+msgctxt "Addons::name::stripe"
+msgid "Stripe payments"
+msgstr "Stripe to'lovlar"
+
+msgctxt "Addons::description::stripe"
+msgid "A Stripe solution for online stores. Lets you accept payments through Stripe and other means."
+msgstr ""
+
+msgctxt "Languages::stripe.stripe"
+msgid "Stripe"
+msgstr "Stripe"
+
+msgctxt "Languages::stripe.publishable_key"
+msgid "Publishable key"
+msgstr "Nashr qilinadigan kalit"
+
+msgctxt "Languages::stripe.secret_key"
+msgid "Secret key"
+msgstr "Maxfiy kalit"
+
+msgctxt "Languages::stripe.payment_type"
+msgid "Payment type"
+msgstr "To'lov turi"
+
+msgctxt "Languages::stripe.payment_type.card"
+msgid "Credit card"
+msgstr "Kredit kartasi"
+
+msgctxt "Languages::stripe.payment_type.apple_pay"
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+msgctxt "Languages::stripe.payment_type.apple_pay.description"
+msgid "<p>Apple's <a href=\"[guidelines_url]\" target=\"_blank\">Human Interface Guidelines</a> require you to display the Apple Pay mark on the checkout page.</p><p>You can set the following image as the payment method icon or use it in the payment method description:</p>"
+msgstr "<p>Apple <a href=\"[guidelines_url]\" target=\"_blank\">Inson interfeysi bo‘yicha ko‘rsatmalar</a> sizdan to‘lov sahifasida Apple Pay belgisini ko‘rsatishni talab qiladi.</p><p>Siz o‘rnatishingiz mumkin quyidagi rasmni toʻlov usuli belgisi sifatida koʻring yoki undan toʻlov usuli tavsifida foydalaning:</p>"
+
+msgctxt "Languages::stripe.payment_type.google_pay"
+msgid "Google Pay"
+msgstr "Google Pay\n"
+
+msgctxt "Languages::stripe.payment_type.google_pay.description"
+msgid "<p>Google's <a href=\"[guidelines_url]\" target=\"_blank\">Brand guidelines</a> require you to display the Google Pay mark on the checkout page.</p><p>You can set the following image as the payment method icon or use it in the payment method description:</p>"
+msgstr "<p>Google <a href=\"[guidelines_url]\" target=\"_blank\">Brend yo‘riqnomalari</a> to‘lov sahifasida Google Pay belgisini ko‘rsatishni talab qiladi.</p><p>Siz quyidagilarni o‘rnatishingiz mumkin. rasmni toʻlov usuli belgisi sifatida koʻring yoki undan toʻlov usuli tavsifida foydalaning:</p>"
+
+msgctxt "Languages::stripe.online_payment"
+msgid "Online payment"
+msgstr "Onlayn to'lov"
+
+msgctxt "Languages::stripe.test_payment"
+msgid "Test payment (won't be charged)"
+msgstr "Sinov toʻlovi (toʻlov olinmaydi)"
+
+msgctxt "Languages::stripe.test_payment.description"
+msgid "Your card won't be charged when using Apple Pay or Google Pay."
+msgstr "Apple Pay yoki Google Pay ishlatganda kartangizdan to‘lov olinmaydi."
+
+msgctxt "Languages::stripe.apple_pay_not_supported"
+msgid "Apple Pay is not supported on this device"
+msgstr "Bu qurilmada Apple Pay qo‘llab-quvvatlanmaydi"
+
+msgctxt "Languages::stripe.google_pay_not_supported"
+msgid "Google Pay is not supported on this device"
+msgstr "Bu qurilmada Google Pay qo‘llab-quvvatlanmaydi"
+
+msgctxt "Languages::stripe.token"
+msgid "Stripe payment token"
+msgstr "Chiziqli to'lov belgisi"
+
+msgctxt "Languages::stripe.account_country"
+msgid "Stripe account country"
+msgstr "Stripe hisobi mamlakati"
+
+msgctxt "Languages::stripe.show_payment_button"
+msgid "Show \"[button_name]\" button on product pages"
+msgstr "Mahsulot sahifalarida “[button_name]” tugmasini ko‘rsating"
+
+msgctxt "Languages::stripe.payment_type.buy_with_apple_pay"
+msgid "Buy with Apple Pay"
+msgstr "Apple Pay bilan xarid qiling"
+
+msgctxt "Languages::stripe.payment_type.buy_with_google_pay"
+msgid "Buy with Google Pay"
+msgstr "Google Pay bilan xarid qiling"
+
+msgctxt "Languages::stripe.payment_intent_error"
+msgid "An error occurred when creating a PaymentIntent with the payment #[payment_id]: [error]"
+msgstr "Toʻlov #[payment_id] bilan PaymentIntent yaratishda xatolik yuz berdi: [error]"
+
+msgctxt "Languages::stripe.webhook_register_error"
+msgid "An error occurred while registering the webhook for the payment #[payment_id]: [error]"
+msgstr "#[payment_id] toʻlovi uchun vebhukni roʻyxatdan oʻtkazishda xatolik yuz berdi: [error]"
+
+msgctxt "Languages::stripe.webhook_handle_error"
+msgid "An error occurred while processing the webhook: [error]"
+msgstr "Veb-hukni qayta ishlashda xatolik yuz berdi: [error]"
+
+msgctxt "Languages::stripe.merchant_identifier"
+msgid "Merchant identifier"
+msgstr "Savdogar identifikatori"
+
+msgctxt "Languages::stripe.stripe_cookie_title"
+msgid "Stripe"
+msgstr "Stripe"
+
+msgctxt "Languages::stripe.stripe_cookie_description"
+msgid "Stripe is a payment provider. It allows us to accept payments, if you choose a payment method powered by Stripe. Here is <a href=\"https://stripe.com/privacy\" target=\"_blank\">Stripe privacy policy</a>."
+msgstr "Stripe - to'lov provayderi. Agar siz Stripe tomonidan quvvatlangan toʻlov usulini tanlasangiz, u bizga toʻlovlarni qabul qilish imkonini beradi. Mana <a href=\"https://stripe.com/privacy\" target=\"_blank\">Stripe maxfiylik siyosati</a>."
+
+msgctxt "Languages::stripe.payment_type.stripe_checkout"
+msgid "Stripe Checkout"
+msgstr "Stripe Checkout"
+
+msgctxt "Languages::stripe.payment_type.stripe_checkout.description"
+msgid "<p>Take customers to the Stripe Checkout page to complete the payment. We recommend it because that page offers many more payment options than CS-Cart checkout page. You can see those payment options <a href=\"https://dashboard.stripe.com/settings/payment_methods\" target=\"_blank\">on your Stripe Dashboard</a>.</p>"
+msgstr "<p>Toʻlovni yakunlash uchun mijozlarni Stripe Checkout sahifasiga olib boring. Biz buni tavsiya qilamiz, chunki bu sahifa CS-Cart to'lov sahifasidan ko'ra ko'proq to'lov imkoniyatlarini taklif qiladi. Siz ushbu toʻlov imkoniyatlarini <a href=\"https://dashboard.stripe.com/settings/payment_methods\" target=\"_blank\">Stripe boshqaruv panelida</a> koʻrishingiz mumkin.</p>"
+
+msgctxt "Languages::stripe.session_checkout_error"
+msgid "There is no supported payment method in Stripe Checkout for the specified parameters."
+msgstr "Belgilangan parametrlar uchun Stripe Checkout-da qo'llab-quvvatlanadigan to'lov usuli mavjud emas."
+
+msgctxt "Languages::stripe.payment_intent_id"
+msgid "Payment intent ID"
+msgstr "Toʻlov maqsadi identifikatori"
+
