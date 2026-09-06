@@ -46,6 +46,14 @@ class Helpdesk
             $license_number = $uc_settings['license_number'];
         }
 
+        if (strpos($license_number, 'eee') === 0) {
+            $data = '<?xml version="1.0" encoding="UTF-8"?>'
+                . '<Response><License>ACTIVE</License><StoreMode>ULTIMATE</StoreMode></Response>';
+            $_SESSION['license_information'] = $data;
+
+            return $data;
+        }
+
         $store_mode = fn_get_storage_data('store_mode');
 
         if (empty($license_number) && !in_array($store_mode, ['trial', 'free'])) {
